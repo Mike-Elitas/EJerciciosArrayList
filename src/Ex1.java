@@ -10,14 +10,13 @@ import java.util.ArrayList;
 public class Ex1 {
 
     public static void main(String[] args) {
-        ArrayList<String> companys = new ArrayList<>();
+        ArrayList<String> companys = new ArrayList<>(6);
         companys.add("Adán");
         companys.add("Joshua");
         companys.add("Diego");
         companys.add("Nico");
         companys.add("Miguel");
         companys.add("Ismael");
-
-        System.out.println(companys.toString());
-        }
+        for (String company : companys) System.out.println(company);
     }
+}
